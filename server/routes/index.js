@@ -1,22 +1,22 @@
 const express = require('express');
 const router = express.Router();
 
-const heroesService = require('../hero-service');
+const leadsService = require('../lead-service');
 
-router.get('/heroes', (req, res) => {
-  heroesService.get(req, res);
+router.get('/leads', (req, res) => {
+  leadsService.get(req, res);
 });
 
-router.put('/hero', (req, res) => {
-  heroesService.create(req, res);
+router.post('/lead', (req, res) => {
+  leadsService.create(req, res);
 });
 
-router.post('/hero', (req, res) => {
-  heroesService.update(req, res);
+router.put('/lead', (req, res) => {
+  leadsService.update(req, res);
 });
 
-router.delete('/hero/:id', (req, res) => {
-  heroesService.destroy(req, res);
+router.delete('/lead/:id', (req, res) => {
+  leadsService.destroy(req, res);
 });
 
 module.exports = router;

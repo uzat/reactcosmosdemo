@@ -1,9 +1,9 @@
 const baseAPI = '/api';
 
-const heroService = {
+const leadsService = {
   get() {
     return new Promise((resolve, reject) => {
-      fetch(`${baseAPI}/heroes`)
+      fetch(`${baseAPI}/leads`)
         .then(response => response.json())
         .then(json => resolve(json))
         .catch(err => {
@@ -12,11 +12,11 @@ const heroService = {
     });
   },
 
-  create(hero) {
+  create(lead) {
     return new Promise((resolve, reject) => {
-      fetch(`${baseAPI}/hero`, {
-        method: 'PUT',
-        body: JSON.stringify(hero),
+      fetch(`${baseAPI}/lead`, {
+        method: 'POST',
+        body: JSON.stringify(lead),
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json'
@@ -30,11 +30,11 @@ const heroService = {
     });
   },
 
-  update(hero) {
+  update(lead) {
     return new Promise((resolve, reject) => {
-      fetch(`${baseAPI}/hero`, {
-        method: 'POST',
-        body: JSON.stringify(hero),
+      fetch(`${baseAPI}/lead`, {
+        method: 'PUT',
+        body: JSON.stringify(lead),
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json'
@@ -49,9 +49,9 @@ const heroService = {
     });
   },
 
-  destroy(hero) {
+  destroy(lead) {
     return new Promise((resolve, reject) => {
-      fetch(`${baseAPI}/hero/${hero.id}`, { method: 'DELETE' })
+      fetch(`${baseAPI}/lead/${lead.id}`, { method: 'DELETE' })
         .then(response => response.json())
         .then(json => resolve(json))
         .catch(err => {
@@ -61,4 +61,4 @@ const heroService = {
   }
 };
 
-export default heroService;
+export default leadsService;

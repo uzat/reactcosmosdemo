@@ -51,13 +51,13 @@ div {
     color: white;
 }
 
-.heroes {
+.leads {
     float: left;
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
 }
-.heroes li {
+.leads li {
     cursor: pointer;
     position: relative;
     left: 0;
@@ -68,27 +68,27 @@ div {
     border-radius: 4px;
     width: 17em;
 }
-.heroes li:hover {
+.leads li:hover {
     color: #607d8b;
     color: #0078d7;
     background-color: #ddd;
     left: .1em;
 }
-.heroes li.selected:hover {
+.leads li.selected:hover {
     /*background-color: #BBD8DC !important;*/
     color: white;
 }
-.heroes .text {
+.leads .text {
     position: relative;
     top: -3px;
 }
-.heroes .saying {
+.leads .email {
     margin: 5px 0;
 }
-.heroes .name {
+.leads .firstName .lastName {
     font-weight: bold;
 }
-.heroes .badge {
+.leads .badge {
     /* display: inline-block; */
     float: left;
     font-size: small;
@@ -107,7 +107,7 @@ div {
     width: 1.2em;
 }
 
-.header-bar {
+.search-bar {
     background-color: #0078d7;
     height: 4px;
     margin-top: 10px;
