@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Paper } from "@material-ui/core";
 import DateFnsUtils from "@date-io/date-fns";
 import { MuiPickersUtilsProvider, Calendar } from "@material-ui/pickers";
-import auLocale from "date-fns/locale/en-AU";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import green from "@material-ui/core/colors/green";
 
@@ -22,7 +21,7 @@ export default function SimpleTooltips() {
 
   return (
     <MuiThemeProvider>
-      <MuiPickersUtilsProvider utils={DateFnsUtils} locale={auLocale}>
+      <MuiPickersUtilsProvider utils={DateFnsUtils}>
         <Paper style={{ overflow: "hidden" }}>
           <Calendar date={selectedDate} onChange={handleDateChange} />
         </Paper>
