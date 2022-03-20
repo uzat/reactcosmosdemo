@@ -6,33 +6,23 @@ page_type: sample
 products:
 - azure
 - azure-cosmos-db
-description: "This is a demo project for the React CosmosDB video series."
+description: "This is a POC"
 ---
 
 # React CosmosDB
 
-This is a demo project for the React CosmosDB video series that shows how to:
+This is a demo project for TAL to administer leads and next events
 
 * Setup a React / Node application
 * Create, Read, Update and Delete data from CosmosDB with the Mongo API
 * Debug React and Node apps
-* Scale and replicate CosmosDB
 
-Follow along with the video series. React is a blast and CosmosDB is crazy fast. Building this app is way too much fun.
 
 ## Get Started
 
 1. Clone this repository
 
-```bash
-git clone https://github.com/burkeholland/react-cosmosdb.git
-```
-
 2. Change into the directory that was cloned and run `npm install`
-
-```bash
-cd react-cosmosdb && npm install
-```
 
 3. Configure the CosmosDB Server Setting
 
